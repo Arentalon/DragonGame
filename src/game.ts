@@ -117,14 +117,14 @@ export class GameController {
         if (this.frame.firstPipe.left + this.pipeWidth == this.birdX - this.speed) {
             this.frame.receivePointSound = true;
             this.frame.score += 1;
-            setTimeout(() => { this.frame.receivePointSound = false; }, 100)
+            setTimeout(() => { this.frame.receivePointSound = false; }, 1000)
         }
 
       // Add Score
         if (this.frame.secondPipe.left + this.pipeWidth == this.birdX - this.speed) {
             this.frame.receivePointSound = true;
             this.frame.score += 1;
-            setTimeout(() => { this.frame.receivePointSound = false; }, 100)
+            setTimeout(() => { this.frame.receivePointSound = false; }, 1000)
         }
 
         this.frame.bird.top += Math.pow(this.gravity, 2) - this.velocity;

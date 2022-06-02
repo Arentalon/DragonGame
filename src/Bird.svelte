@@ -23,7 +23,7 @@
 ></section>
 {/if}
 {#if bird.jump }
-<audio autoplay src="/build/audio/wingMovement.mp3"/> 
+<audio autoplay src="https://github.com/Arentalon/DragonGame/blob/main/public/build/audio/wingMovement.mp3?raw=true"/> 
 <section
     style="width: {bird.width}px; height: {bird.height}px; top: {bird.top}px; left: {bird.left}px;"
     id="bird-up"
