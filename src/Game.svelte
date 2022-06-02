@@ -88,7 +88,11 @@
     <Pipe pipe="{frame.firstPipe}" />
     <Pipe pipe="{frame.secondPipe}" />
     {#if frame.receivePointSound}
-        <audio autoplay src="https://github.com/Arentalon/DragonGame/blob/main/public/build/audio/receivePoint.mp3?raw=true"/> 
+    <script>
+        var audio = new Audio("https://github.com/Arentalon/DragonGame/blob/main/public/build/audio/receivePoint.mp3?raw=true")
+        audio.play()
+        </script>
+        <!-- <audio autoplay src="https://github.com/Arentalon/DragonGame/blob/main/public/build/audio/receivePoint.mp3?raw=true"/>  -->
     {/if}
     {#if frame.gameOver || !frame.gameStarted}
         <audio autoplay src="https://github.com/Arentalon/DragonGame/blob/main/public/build/audio/deathRoar.mp3?raw=true"/> 
