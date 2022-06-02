@@ -454,13 +454,13 @@ var app = (function () {
             if (this.frame.firstPipe.left + this.pipeWidth == this.birdX - this.speed) {
                 this.frame.receivePointSound = true;
                 this.frame.score += 1;
-                setTimeout(() => { this.frame.receivePointSound = false; }, 1000);
+                setTimeout(() => { this.frame.receivePointSound = false; }, 500);
             }
             // Add Score
             if (this.frame.secondPipe.left + this.pipeWidth == this.birdX - this.speed) {
                 this.frame.receivePointSound = true;
                 this.frame.score += 1;
-                setTimeout(() => { this.frame.receivePointSound = false; }, 1000);
+                setTimeout(() => { this.frame.receivePointSound = false; }, 500);
             }
             this.frame.bird.top += Math.pow(this.gravity, 2) - this.velocity;
             return this.frame;
